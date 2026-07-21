@@ -1,10 +1,10 @@
-# 📊 Wordstat API — навык для AI-агентов
+# 📊 Яндекс.Wordstat API — навык для AI-агентов
 
-**Подключи Яндекс.Вордстат к своему AI-агенту и собирай поисковую семантику автоматом. Без интерфейса, без копипаста, без Excel.**
+**Подключи Вордстат к своему AI-агенту и собирай поисковую семантику автоматом. Без интерфейса, без копипаста, без Excel.**
 
 [![Hermes](https://img.shields.io/badge/Hermes_Agent-Skill-7C3AED?logo=robot&style=flat-square)](skill/SKILL.md)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&style=flat-square)]()
-[![API](https://img.shields.io/badge/Yandex_Search_API-v2-red?style=flat-square)](https://yandex.cloud/ru/docs/search-api/)
+[![API](https://img.shields.io/badge/API-Яндекс.Поиск_v2-red?style=flat-square)](https://yandex.cloud/ru/docs/search-api/)
 [![Stars](https://img.shields.io/github/stars/axelfreeman/yandex-wordstat-guide?style=flat-square)]()
 
 ```bash
@@ -23,6 +23,12 @@ npx hermes skill install axelfreeman/yandex-wordstat-guide
 Вы → Агент → Wordstat API → 500 фраз за час → DeepSeek → Готовые страницы
 ```
 
+**Для кого:**
+- Контекстологи и таргетологи — ежедневный мониторинг спроса
+- SEO-специалисты — семантическое ядро за час вместо недели
+- AI-маркетологи — данные для генерации страниц через LLM
+- Владельцы бизнеса — понимание что реально ищут клиенты
+
 ## Установка
 
 ### Как навык для Hermes Agent
@@ -31,12 +37,12 @@ npx hermes skill install axelfreeman/yandex-wordstat-guide
 npx hermes skill install axelfreeman/yandex-wordstat-guide
 ```
 
-### Как standalone скрипт
+### Как отдельный скрипт
 
 ```bash
 git clone https://github.com/axelfreeman/yandex-wordstat-guide.git
 cd yandex-wordstat-guide
-pip install -r requirements.txt  # только requests
+pip install -r requirements.txt
 cp .env.example .env  # вставьте свои ключи
 ```
 
@@ -65,8 +71,8 @@ export WORDSTAT_FOLDER_ID="b1g..."
 python3 scripts/collect.py "ремонт квартир" "дизайн интерьера"
 ```
 
+Результат — `semantic_results.json`:
 ```json
-// → semantic_results.json
 {
   "total_phrases": 171,
   "results": [
@@ -94,8 +100,9 @@ prompt = f"Вот семантика. Сгенерируй 10 SEO-страниц
 │   ├── quick-start.md       # От clone до первого результата
 │   └── pitfalls.md          # Лимиты, строки вместо чисел, folderId
 ├── examples/
-│   └── results.json         # Пример выходных данных
-└── .env.example             # Шаблон для ключей
+│   └── sample_results.json  # Пример выходных данных
+├── .env.example             # Шаблон для ключей
+└── requirements.txt         # requests
 ```
 
 ## Ограничения
