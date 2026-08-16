@@ -135,3 +135,6 @@ python3 scripts/trending.py "нейросеть" "маркетинг"
 ---
 
 *MIT License. Делайте что хотите, просто поставьте звезду.*
+---
+
+*Last updated: August 2026.*
