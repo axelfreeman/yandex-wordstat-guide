@@ -4,6 +4,7 @@
 
 [![Hermes](https://img.shields.io/badge/Hermes_Agent-Skill-7C3AED?logo=robot&style=flat-square)](skill/SKILL.md)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&style=flat-square)]()
+[![skills.sh](https://skills.sh/b/axelfreeman/yandex-wordstat-guide)](https://skills.sh/axelfreeman/yandex-wordstat-guide)
 [![API](https://img.shields.io/badge/API-Яндекс.Поиск_v2-red?style=flat-square)](https://yandex.cloud/ru/docs/search-api/)
 [![Stars](https://img.shields.io/github/stars/axelfreeman/yandex-wordstat-guide?style=flat-square)]()
 

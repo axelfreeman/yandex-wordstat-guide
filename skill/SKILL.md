@@ -1,6 +1,6 @@
 ---
 name: wordstat-collector
-description: "Яндекс.Вордстат через API. Автоматический сбор поисковой семантики для AI-агента. 100 запросов/час."
+description: "Яндекс.Вордстат через API — автоматический сбор поисковой семантики для AI-агента (100 запросов/час). Use when нужна частотность, сезонность и кластеризация запросов для RU-рынка — «собери семантику», «вордстат», «частотность запросов», keyword research для Яндекса."
 version: 2.0.0
 install: "npx hermes skill install axelfreeman/yandex-wordstat-guide"
 requires:
